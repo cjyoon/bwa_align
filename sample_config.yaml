@@ -1,0 +1,10 @@
+'sample':
+    'T2664-Hiseq':
+        'name': 'T2664-blood-wgs-ILLUMINA'
+        'fq1': ['/path/to/T2664-Hiseq_0_R1.fastq.gz', '/path/to/T2664-Hiseq_1_R1.fastq.gz']
+        'fq2': ['/path/to/T2664-Hiseq_0_R2.fastq.gz', '/path/to/T2664-Hiseq_1_R2.fastq.gz']
+    'T2664-Novaseq':
+        'name': 'T2664-blood-wgs-ILLUMINA'
+        'fq1': ['/path/to/T2664-Novaseq_0_R1.fastq.gz', '/path/to/T2664-Novaseq_1_R1.fastq.gz']
+        'fq2': ['/path/to/T2664-Novaseq_0_R2.fastq.gz', '/path/to/T2664-Novaseq_1_R2.fastq.gz']
+
