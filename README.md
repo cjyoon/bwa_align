@@ -21,7 +21,7 @@ bwa mem -M -t {threads} -R '@RG\tID:{rgname}\tLB:{rgname}\tSM:{rgname}\tPL:ILLUM
 ```
 In the above example, running this snakefile will give you two bam files, `dna_bam/T2664-Hiseq.bam` and `dna_bam/T2664-Novaseq.bam`. Both will have their `name` set as their `@RG SM:` read names. In the case of having more than one pairs of FASTQ files for a single sample (e.g. T2664-Hiseq), each pairs will be aligned, mark duplicated, and sorted independently and then will be merged. Once a merged bam file is made, then `GATK IndelRealigner` will realign each bam files around potential indel sites to produce the final bam file. 
 
-# TO run
+# To run
 Type in the following command in a directory with `sample_config.yaml` file. 
 ```
 snakemake -p -s ~/scripts/bwa_align/highdepth_bwa_align.smk
