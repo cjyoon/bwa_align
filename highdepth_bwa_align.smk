@@ -52,7 +52,7 @@ rule bwa_align:
         bai = "tmp_bam/{sample}.fmarked.bam.bai", 
     log:
         "logs/{sample}.bwa.log"
-    threads: 12
+    threads: 4
     run:
         bamfiles = []
         for i, (fq1, fq2) in enumerate(zip(input.fq1, input.fq2)):
